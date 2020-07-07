@@ -1,0 +1,351 @@
+@font-face {
+  font-family: "Founders Grotesk Light";
+  src: url("../fonts/founders-grotesk/FoundersGrotesk-Light.otf");
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../fonts/founders-grotesk/FoundersGrotesk-Regular.otf");
+}
+
+@font-face {
+  font-family: "Integral Regular";
+  src: url("../fonts/integral-cf/IntegralCF-Regular.otf");
+}
+
+@font-face {
+  font-family: "Ogg Roman";
+  src: url("../fonts/ogg/Ogg Roman.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  min-height: 100%;
+  font-family: "Founders Grotesk", sans-serif;
+  margin: 0;
+  background-color: #1d3557;
+  color: #f1faee;
+}
+
+.hero {
+  min-height: 75vh;
+  margin: 0;
+  padding: 40px;
+  font-size: 95px;
+  line-height: 1;
+  color: #f1faee;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .title {
+    font-family: "Integral Regular";
+  }
+
+  .timeline {
+    font-family: "Ogg Roman";
+  }
+}
+
+.project {
+  display: block;
+  position: relative;
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+
+  .arrow {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) rotate(0);
+  }
+
+  &-heading {
+    position: relative;
+    width: 100%;
+    padding: 40px 40px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #457b9d;
+
+    &:before {
+      content: "";
+      background-color: #fff;
+      width: 0;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: width 0.3s;
+    }
+
+    .red & {
+      &:before {
+        background-color: #c52e28;
+      }
+    }
+
+    .serial {
+      margin: 0 100px 0 0;
+      position: relative;
+      left: -4px;
+      font-family: "Founders Grotesk Light";
+      font-size: 25px;
+      width: min-content;
+      overflow-wrap: break-word;
+      letter-spacing: 0px;
+      line-height: 1;
+      color: #f1faee;
+      text-transform: uppercase;
+      opacity: 1;
+      transition: transform 0.3s ease;
+    }
+    .title {
+      position: relative;
+      margin: 0;
+      font-family: "Founders Grotesk Light";
+      font-size: 65px;
+      letter-spacing: 0px;
+      line-height: 1;
+      color: #f1faee;
+      text-transform: uppercase;
+      opacity: 1;
+      transition: transform 0.3s ease;
+    }
+    .arrow {
+      position: absolute;
+      top: 47%;
+      right: 40px;
+      margin: -16px 0 0;
+      width: 41px;
+      will-change: transform;
+      transform: translateZ(0) rotate(0);
+      transform-origin: 50% 51%;
+      backface-visibility: hidden;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &-marquee {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0 16px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    background-color: #457b9d;
+
+    &:before {
+      content: "";
+      background-color: #fff;
+      width: 0;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: width 0.3s;
+    }
+
+    .red & {
+      &:before {
+        background-color: #c52e28;
+      }
+    }
+
+    div {
+      display: inline-block;
+      padding-left: 100%;
+      will-change: transform;
+      animation: marquee 20s linear infinite;
+    }
+
+    .text-container {
+      position: relative;
+      margin: 0 20px;
+      font-family: "Founders Grotesk";
+      color: #f1faee;
+      line-height: 1;
+      white-space: nowrap;
+      font-size: 16px;
+
+      .text-bold {
+        font-weight: bold;
+      }
+
+      .text-divider {
+        padding-left: 5px;
+
+        &:before {
+          content: "•";
+        }
+      }
+    }
+  }
+
+  &-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    min-height: 328px;
+    overflow: hidden;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+
+    .track {
+      position: absolute;
+      white-space: nowrap;
+      will-change: transform;
+      animation: marquee 32s linear infinite;
+    }
+
+    .img {
+      margin: 0 1px;
+    }
+  }
+
+  .link {
+    text-decoration: none;
+
+    &:hover {
+      .project-heading {
+        &:before {
+          width: 100%;
+        }
+
+        .serial {
+          transform: translateX(15px);
+        }
+
+        .title {
+          transform: translateX(15px);
+        }
+      }
+
+      .project-marquee {
+        &:before {
+          width: 100%;
+        }
+      }
+
+      .arrow {
+        position: absolute;
+        top: 47%;
+        right: 40px;
+        margin: -16px 0 0;
+        width: 41px;
+        will-change: transform;
+        transform-origin: 50% 51%;
+        backface-visibility: hidden;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+
+  &-heading {
+    font-family: "Integral Regular";
+    font-size: 35px;
+    padding: 40px;
+    line-height: 1;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  &-row {
+    font-family: "Founders Grotesk Light";
+    font-size: 65px;
+    padding: 30px 40px 15px;
+    line-height: 1;
+    display: flex;
+    border-bottom: 1px solid #ebebeb;
+    color: inherit;
+    text-decoration: none;
+
+    .time {
+      flex: 1;
+    }
+
+    .name {
+      flex: 1;
+    }
+  }
+}
+
+.footer {
+  margin-top: 15rem;
+  display: flex;
+  border-top: 1px solid #ebebeb;
+
+  .logo {
+    padding: 30px 40px;
+  }
+
+  .about {
+    font-family: "Founders Grotesk Light";
+    padding: 30px 40px 15px;
+    font-size: 55px;
+    line-height: 1;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .contact {
+    font-family: "Founders Grotesk Light";
+    padding: 30px 40px 15px;
+    font-size: 55px;
+    line-height: 1;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .scroll-top {
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+
+    .arrow-top {
+      width: 41px;
+      backface-visibility: hidden;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes swipe {
+  to {
+    width: 100%;
+  }
+}
