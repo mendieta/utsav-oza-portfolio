@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node-sass scss -o css"
+    "build": "node-sass --watch scss -o css"
   },
   "author": "Ankit Karnany <ankitkarnany@gmail.com>",
   "license": "ISC",

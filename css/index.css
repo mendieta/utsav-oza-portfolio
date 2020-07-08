@@ -448,3 +448,109 @@ body {
 @keyframes swipe {
   to {
     width: 100%; } }
+
+.case-study {
+  background-color: #c52e28; }
+  .case-study .hero {
+    min-height: initial; }
+  .case-study .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e63946;
+    padding: 40px; }
+  .case-study .brief {
+    padding: 40px; }
+    .case-study .brief .heading {
+      margin-top: 0;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-size: 45px; }
+    .case-study .brief .content {
+      display: flex; }
+      .case-study .brief .content .summary {
+        font-family: "Founders Grotesk Light";
+        margin: 0 100px 0 0;
+        font-size: 30px;
+        flex: 2; }
+      .case-study .brief .content .img {
+        flex: 1;
+        text-align: center; }
+        .case-study .brief .content .img img {
+          width: 200px; }
+  .case-study .process {
+    padding: 40px; }
+    .case-study .process .heading {
+      margin-top: 0;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-size: 45px; }
+    .case-study .process .content {
+      display: flex;
+      justify-content: space-around; }
+      .case-study .process .content figure {
+        text-align: center;
+        padding-right: 2rem;
+        padding-top: 2rem; }
+        .case-study .process .content figure img {
+          width: 120px;
+          height: 120px;
+          margin-bottom: 10px; }
+        .case-study .process .content figure figcaption {
+          font-size: 21px; }
+  .case-study .solution {
+    padding: 40px; }
+    .case-study .solution .heading {
+      margin-top: 0;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-size: 45px; }
+    .case-study .solution .content {
+      display: flex; }
+      .case-study .solution .content .summary {
+        font-family: "Founders Grotesk Light";
+        margin: 0 100px 0 0;
+        font-size: 30px;
+        flex: 2; }
+      .case-study .solution .content .img {
+        flex: 1;
+        text-align: center; }
+        .case-study .solution .content .img img {
+          width: 200px; }
+  .case-study .code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e63946;
+    padding: 40px; }
+  .case-study .team {
+    padding: 40px; }
+    .case-study .team .heading {
+      margin-top: 0;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-size: 45px; }
+    .case-study .team .content {
+      display: flex;
+      justify-content: space-around; }
+      .case-study .team .content figure {
+        text-align: center;
+        padding-right: 2rem;
+        padding-top: 2rem; }
+        .case-study .team .content figure img {
+          width: 120px;
+          height: 120px;
+          margin-bottom: 10px; }
+        .case-study .team .content figure figcaption {
+          text-align: left; }
+          .case-study .team .content figure figcaption .name {
+            font-family: "Integral Regular";
+            font-size: 21px;
+            margin-bottom: 5px; }
+          .case-study .team .content figure figcaption .designation {
+            font-size: 21px; }
+  .case-study .footer {
+    margin-top: 0; }
+    .case-study .footer .contact {
+      font-size: 45px;
+      justify-content: center; }

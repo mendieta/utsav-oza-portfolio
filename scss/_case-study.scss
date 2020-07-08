@@ -1,0 +1,167 @@
+.case-study {
+  background-color: #c52e28;
+
+  .hero {
+    min-height: initial;
+  }
+
+  .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e63946;
+    padding: 40px;
+  }
+
+  .brief {
+    padding: 40px;
+
+    .heading {
+      margin-top: 0;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-size: 45px;
+    }
+
+    .content {
+      display: flex;
+
+      .summary {
+        font-family: "Founders Grotesk Light";
+        margin: 0 100px 0 0;
+        font-size: 30px;
+        flex: 2;
+      }
+
+      .img {
+        flex: 1;
+        text-align: center;
+
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+
+  .process {
+    padding: 40px;
+
+    .heading {
+      margin-top: 0;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-size: 45px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-around;
+
+      figure {
+        text-align: center;
+        padding-right: 2rem;
+        padding-top: 2rem;
+
+        img {
+          width: 120px;
+          height: 120px;
+          margin-bottom: 10px;
+        }
+
+        figcaption {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+
+  .solution {
+    padding: 40px;
+
+    .heading {
+      margin-top: 0;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-size: 45px;
+    }
+
+    .content {
+      display: flex;
+
+      .summary {
+        font-family: "Founders Grotesk Light";
+        margin: 0 100px 0 0;
+        font-size: 30px;
+        flex: 2;
+      }
+
+      .img {
+        flex: 1;
+        text-align: center;
+
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+
+  .code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e63946;
+    padding: 40px;
+  }
+
+  .team {
+    padding: 40px;
+
+    .heading {
+      margin-top: 0;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-size: 45px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-around;
+
+      figure {
+        text-align: center;
+        padding-right: 2rem;
+        padding-top: 2rem;
+
+        img {
+          width: 120px;
+          height: 120px;
+          margin-bottom: 10px;
+        }
+
+        figcaption {
+          text-align: left;
+
+          .name {
+            font-family: "Integral Regular";
+            font-size: 21px;
+            margin-bottom: 5px;
+          }
+
+          .designation {
+            font-size: 21px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 0;
+    .contact {
+      font-size: 45px;
+      justify-content: center;
+    }
+  }
+}
