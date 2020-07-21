@@ -5,7 +5,12 @@ function initCursor() {
   var overlay = document.querySelector(".experiences");
 
   function onMouseEnter() {
-    gsap.to(cursor, {scale: 1, autoAlpha: 1, duration: 0.3, ease: "back.out"});
+    gsap.to(cursor, {
+      scale: 1,
+      autoAlpha: 1,
+      duration: 0.3,
+      ease: "back.out",
+    });
   }
 
   function onMouseMove(e) {
@@ -13,12 +18,17 @@ function initCursor() {
       duration: 0.5,
       x: e.clientX,
       y: e.clientY,
-      ease: "power2.easeOut"
+      ease: "power2.easeOut",
     });
   }
 
   function onMouseLeave() {
-    gsap.to(cursor, {scale: 0.1, autoAlpha: 0, duration: 0.3, ease: "back.in"});
+    gsap.to(cursor, {
+      scale: 0.1,
+      autoAlpha: 0,
+      duration: 0.3,
+      ease: "back.in",
+    });
   }
 
   var elements = document.querySelectorAll("[data-cursor]");
@@ -26,7 +36,7 @@ function initCursor() {
     element.addEventListener("mouseenter", function () {
       cursor.style.backgroundImage = "url(" + element.dataset.cursor + ")";
     });
-  })
+  });
 
   overlay.addEventListener("mouseenter", onMouseEnter);
   overlay.addEventListener("mousemove", onMouseMove);
